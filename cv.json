@@ -1,66 +1,51 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
+    "name": "Valentín Lorente Jiménez",
+    "label": "Full Stack Developer",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "email": "vlorentejimenez@gmail.com",
+    "phone": "+34 690760113",
+    "url": "https://vlorente.dev",
+    "summary": "+4 años de experiencia como Desarrollador. Disfruto los retos de programación, aprender nuevas tecnologías y evolucionar como desarrollador. Me encanta relacionarme con mis compañeros, aprender de ellos y afrontar juntos nuevos desafíos.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
+      "postalCode": "30562",
+      "city": "Murcia",
       "countryCode": "ES",
       "region": "España"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "vlorente",
+        "url": "https://linkedin.com/in/vlorente"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "vLorente",
+        "url": "https://github.com/vLorente"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "name": "Healthpoint Europe SL",
+      "position": "Desarrollador Python & Angular",
+      "url": "",
+      "startDate": "2020-07-01",
+      "endDate": "2023-04-01",
+      "summary": "Desarrollador de Aplicaciones con Python (Backend) y Angular + Ionic (Frontend). Mi labor como ingeniero del software me ha llevado a verme involucrado en el proceso completo de desarrollo, como analista, programador, diseñador, etc. Además de gestionar proyectos informáticos, tiempos, recuros y personas. El producto principal se trata de un ERP basado en Python bajo el framework Tryton. Como desarrollador me encargaba tanto de ampliar como de mantener el ERP, también desarrollar APIs, aplicaciones web y móviles para interactuar con el sistema y facilitar ciertas tareas al usuario. Esta etapa en una PYME ha sido sin duda la experiencia más enriquecedora en mi tiempo como desarrollador, ya que ha potenciado mi capacidad autodidacta y de resolución de problemas en cualquier ámbito tanto software como hardware.",
       "highlights": [
         "Started the company"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
-      "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "NTT Data",
+      "position": "Desarrollador SAP/ABAP",
+      "url": "",
+      "startDate": "2019-01-01",
+      "endDate": "2020-07-01",
+      "summary": "Desarrollador en lenguaje ABAP, realizando ampliación y mantenimiento de servicios SAP. Además de los conocimientos própios de la tecnología adquirí experiencia en trabajo en equipos grandes, relaciones interpersonales en el ambiente laboral y gestión de tiempo y recursos.",
       "highlights": [
         "Started the company"
       ]
@@ -77,18 +62,32 @@
       "Awarded 'Volunteer of the Month'"
     ]
   }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
+  "education": [
+    {
+      "institution": "UCAM",
+      "url": "https://www.ucam.edu",
+      "area": "Ingeniero de Software",
+      "studyType": "Bachelor",
+      "startDate": "2015-01-01",
+      "endDate": "2019-01-01",
+      "score": "8.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "CES Vega Media",
+      "url": "https://ces-vegamedia.es/",
+      "area": "Administración de Sistemas Informáticos en Red",
+      "studyType": "Bachelor",
+      "startDate": "2013-01-01",
+      "endDate": "2013-01-01",
+      "score": "7.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
   "awards": [{
     "title": "Award",
     "date": "2014-11-01",
@@ -109,6 +108,13 @@
     "summary": "Description…"
   }],
   "skills": [
+    {
+      "name": "Python",
+      "level": "Avanzado",
+      "keywords": [
+        "Backend"
+      ]
+    },
     {
       "name": "HTML",
       "level": "Master",
@@ -131,13 +137,6 @@
       ]
     },
     {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
-    },
-    {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
@@ -145,14 +144,7 @@
       ]
     },
     {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
+      "name": "PostgreSQL",
       "level": "Avanzado",
       "keywords": [
         "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
@@ -173,14 +165,7 @@
       ]
     },
     {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
+      "name": "Angular",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
