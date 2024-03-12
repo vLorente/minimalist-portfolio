@@ -199,9 +199,11 @@
       "isActive": true,
       "description": "Landing Page para la empresa de embutidos 'Embutidos y Jamones Duro'",
       "highlights": [
+        "*En desarrollo",
         "Astro",
         "Vercel",
-        "Github Actions"
+        "Github Actions",
+        "TailwindCSS"
       ],
       "url": "https://embutidosduro.es"
     }
