@@ -81,7 +81,7 @@
       "area": "Administración de Sistemas Informáticos en Red",
       "studyType": "Bachelor",
       "startDate": "2013-01-01",
-      "endDate": "2013-01-01",
+      "endDate": "2015-01-01",
       "score": "7.0",
       "courses": [
         "DB1101 - Basic SQL"
@@ -130,17 +130,17 @@
       ]
     },
     {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
-    },
-    {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "AstroJS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Framework"
       ]
     },
     {
