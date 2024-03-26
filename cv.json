@@ -223,6 +223,18 @@
         "Github Actions"
       ],
       "url": "https://seritracker.vlorente.dev"
+    },
+    {
+      "name": "La Fede Teams Analytics",
+      "github": "https://github.com/vLorente/la-fede-teams-analytics",
+      "description": "Análisis de datos equipos 2a Autonómica Región de Murcia. Demo webscraping, fastAPI y DataScience. ",
+      "highlights": [
+        "Python",
+        "WebScrapy",
+        "FastAPI",
+        "DataScience"
+      ],
+      "url": "https://github.com/vLorente/la-fede-teams-analytics"
     }
 
   ]
