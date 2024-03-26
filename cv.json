@@ -116,20 +116,6 @@
       ]
     },
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
-      ]
-    },
-    {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
@@ -137,10 +123,31 @@
       ]
     },
     {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
       "name": "AstroJS",
       "level": "Master",
       "keywords": [
         "Desarrollo Web", "Frontend", "Framework"
+      ]
+    },
+    {
+      "name": "TailwindCSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
       ]
     },
     {
@@ -162,13 +169,6 @@
       "level": "Avanzado",
       "keywords": [
         "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-      ]
-    },
-    {
-      "name": "Angular",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
       ]
     }
   ],
@@ -197,7 +197,7 @@
     {
       "name": "Embutidos Duro",
       "isActive": true,
-      "description": "Landing Page para la empresa de embutidos 'Embutidos y Jamones Duro'",
+      "description": "Landing Page para la empresa de embutidos 'Embutidos y Jamones Duro'.",
       "highlights": [
         "*En desarrollo",
         "Astro",
@@ -206,6 +206,23 @@
         "TailwindCSS"
       ],
       "url": "https://embutidosduro.es"
+    },
+    {
+      "name": "SeriTracker",
+      "isActive": true,
+      "github": "https://github.com/vLorente/seritracker",
+      "description": "Este proyecto es una aplicación web desarrollada con Astro y Preact que te permite realizar un seguimiento de tus series favoritas.",
+      "highlights": [
+        "Astro",
+        "Preact",
+        "Supabase",
+        "Vitest",
+        "TailwindCSS",
+        "DaisyUI",
+        "Vercel",
+        "Github Actions"
+      ],
+      "url": "https://seritracker.vlorente.dev"
     }
 
   ]
