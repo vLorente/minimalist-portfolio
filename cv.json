@@ -226,6 +226,7 @@
     },
     {
       "name": "La Fede Teams Analytics",
+      "isActive": false,
       "github": "https://github.com/vLorente/la-fede-teams-analytics",
       "description": "Análisis de datos equipos 2a Autonómica Región de Murcia. Demo webscraping, fastAPI y DataScience. ",
       "highlights": [
