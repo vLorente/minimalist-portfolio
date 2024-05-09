@@ -195,17 +195,17 @@
   }],
   "projects": [
     {
-      "name": "Embutidos Duro",
+      "name": "vLorente Blog",
       "isActive": true,
-      "description": "Landing Page para la empresa de embutidos 'Embutidos y Jamones Duro'.",
+      "description": "Blog personal, donde postearé: snippets de código, tutoriales y cosas interesantes del mundo de la programación.",
       "highlights": [
-        "*En desarrollo",
         "Astro",
         "Vercel",
         "Github Actions",
-        "TailwindCSS"
+        "TailwindCSS",
+        "Swup Animations"
       ],
-      "url": "https://embutidosduro.es"
+      "url": "https://blog.vlorente.dev"
     },
     {
       "name": "SeriTracker",
