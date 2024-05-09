@@ -197,6 +197,7 @@
     {
       "name": "vLorente Blog",
       "isActive": true,
+      "github": "https://github.com/vLorente/snippets-blog",
       "description": "Blog personal, donde postearé: snippets de código, tutoriales y cosas interesantes del mundo de la programación.",
       "highlights": [
         "Astro",
