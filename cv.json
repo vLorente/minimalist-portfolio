@@ -209,6 +209,21 @@
       "url": "https://blog.vlorente.dev"
     },
     {
+      "name": "React Cookie Guard",
+      "isActive": true,
+      "github": "https://github.com/vLorente/react-cookie-guard",
+      "description": "Mi primer paquete en NPM, se trata de un componente de react que proporciona la interfaz para el manejo de cookies en una web.",
+      "highlights": [
+        "React",
+        "NPM",
+        "Github Actions",
+        "Vitest",
+        "CSS Animations",
+        "i18n"
+      ],
+      "url": "https://www.npmjs.com/package/react-cookie-guard"
+    },
+    {
       "name": "SeriTracker",
       "isActive": true,
       "github": "https://github.com/vLorente/seritracker",
