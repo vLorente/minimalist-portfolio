@@ -223,6 +223,34 @@
       "url": "https://blog.vlorente.dev"
     },
     {
+      "name": "La Fede Teams Analytics",
+      "isActive": false,
+      "github": "https://github.com/vLorente/la-fede-teams-analytics",
+      "description": "Análisis de datos equipos 2a Autonómica Región de Murcia. Demo webscraping, fastAPI y DataScience. ",
+      "highlights": [
+        "Python",
+        "WebScrapy",
+        "FastAPI",
+        "DataScience"
+      ],
+      "url": "https://github.com/vLorente/la-fede-teams-analytics"
+    },
+    {
+      "name": "Django TicTacToe",
+      "isActive": false,
+      "github": "https://github.com/vLorente/django_tictactoe",
+      "description": "Demo Django API con Rest Framework.",
+      "highlights": [
+        "Python",
+        "Django",
+        "Django Rest Framework",
+        "Python scripting",
+        "Github Actions",
+        "Poetry"
+      ],
+      "url": "https://github.com/vLorente/la-fede-teams-analytics"
+    },
+    {
       "name": "React Cookie Guard",
       "isActive": true,
       "github": "https://github.com/vLorente/react-cookie-guard",
@@ -253,19 +281,6 @@
         "Github Actions"
       ],
       "url": "https://seritracker.vlorente.dev"
-    },
-    {
-      "name": "La Fede Teams Analytics",
-      "isActive": false,
-      "github": "https://github.com/vLorente/la-fede-teams-analytics",
-      "description": "Análisis de datos equipos 2a Autonómica Región de Murcia. Demo webscraping, fastAPI y DataScience. ",
-      "highlights": [
-        "Python",
-        "WebScrapy",
-        "FastAPI",
-        "DataScience"
-      ],
-      "url": "https://github.com/vLorente/la-fede-teams-analytics"
     }
 
   ]
