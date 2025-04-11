@@ -6,7 +6,7 @@
     "phone": null,
     "email": "vlorentejimenez@gmail.com",
     "url": "https://vlorente.dev",
-    "summary": "Más de 4 años de experiencia en desarrollo, con especialización en Python backend y Angular frontend. Durante los últimos 3 años, he participado proyectos como desarrollador Python backend, diseñando soluciones robustas y eficientes. He liderado proyectos como desarrollador Angular frontend creando interfaces de usuario efectivas y atractivas, enfocando las soluciones en la experiencia de usuario además del cumplimiento de los requisitos. Actualmente me encuentro en búsqueda de nuevos retos y seguir desarrollando mis habilidades.",
+    "summary": "Desarrollador Full Stack con más de 4 años de experiencia. He trabajado en el desarrollo de ERPs, APIs, aplicaciones web y móviles, participando en todo el ciclo de vida del software. Destaco por mi capacidad para diseñar soluciones eficientes, resolver problemas complejos y crear interfaces intuitivas centradas en la experiencia del usuario. Busco nuevos retos en el sector tecnológico donde pueda seguir creciendo y aportando valor con mis habilidades técnicas y analíticas.",
     "location": {
       "address": "",
       "postalCode": "30562",
@@ -34,7 +34,7 @@
       "url": "",
       "startDate": "2020-07-01",
       "endDate": "2023-04-01",
-      "summary": "Desarrollador de Aplicaciones con Python (Backend) y Angular + Ionic (Frontend). Mi labor como ingeniero del software me ha llevado a verme involucrado en el proceso completo de desarrollo, como analista, programador, diseñador, etc. Además de gestionar proyectos informáticos, tiempos, recursos y personas. El producto principal se trata de un ERP basado en Python bajo el framework Tryton. Como desarrollador me encargaba tanto de ampliar como de mantener el ERP, también desarrollar APIs, aplicaciones web y móviles para interactuar con el sistema y facilitar ciertas tareas al usuario. Esta etapa en una PYME ha sido sin duda la experiencia más enriquecedora en mi tiempo como desarrollador, ya que ha potenciado mi capacidad autodidacta y de resolución de problemas en cualquier ámbito tanto software como hardware.",
+      "summary": "En Healthpoint formé parte del equipo de desarrollo y mantenimiento de un ERP basado en Tryton (Python), implementando funcionalidades orientadas a la mejora de procesos de producción, logística y ventas. Lideré el desarrollo de aplicaciones web y móviles con Angular e Ionic integradas con el ERP, y propuse una herramienta interna de despliegue semi-automatizado mediante Python scripting, que redujo en un 75 % el tiempo de implantación en nuevos clientes. Impulsé la transición hacia metodologías ágiles, mejorando la eficiencia del equipo y la satisfacción del cliente, y estandaricé los entornos de desarrollo, promoviendo buenas prácticas y coherencia técnica.",
       "highlights": [
         "Started the company"
       ]
@@ -45,7 +45,7 @@
       "url": "",
       "startDate": "2019-01-01",
       "endDate": "2020-07-01",
-      "summary": "Desarrollador en lenguaje ABAP, realizando ampliación y mantenimiento de servicios SAP. Además de los conocimientos propios de la tecnología adquirí experiencia en trabajo en equipos grandes, relaciones interpersonales en el ambiente laboral y gestión de tiempo y recursos.",
+      "summary": "En NTT Data participé en proyectos de desarrollo y mantenimiento de soluciones SAP para distintos clientes, realizando ampliaciones y personalizaciones en lenguaje ABAP adaptadas a los requerimientos específicos de cada negocio. También llevé a cabo el análisis y desarrollo de informes personalizados, orientados a mostrar la información clave que cada cliente necesitaba para su operativa diaria y toma de decisiones.",
       "highlights": [
         "Started the company"
       ]
