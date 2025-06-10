@@ -20,9 +20,13 @@ import { work } from "@cv"
                 <header>
                   <div>
                     <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
+                      {url ?
+                       (<a href={url} title={`Ver ${name}`} target="_blank">
                         {name}
-                      </a>
+                      </a>) : (<span title={name}>
+                        {name}
+                      </span>)
+                      }
                     </h3>
                     <h4>{position}</h4>
                   </div>
