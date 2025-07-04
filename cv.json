@@ -209,6 +209,22 @@
   }],
   "projects": [
     {
+      "name": "Página Web Boda",
+      "isActive": true,
+      "github": "https://github.com/vLorente/boda-nc",
+      "description": "Página web completa para boda: invitación digital, galería, historia de los novios, etc.",
+      "highlights": [
+        "Astro",
+        "Vercel",
+        "TailwindCSS",
+        "React",
+        "Image Gallery",
+        "Node Scripting",
+        "Git"
+      ],
+      "url": "https://www.bodanuriaycristian.es"
+    },
+    {
       "name": "vLorente Blog",
       "isActive": true,
       "github": "https://github.com/vLorente/snippets-blog",
