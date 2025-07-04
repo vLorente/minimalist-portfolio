@@ -116,6 +116,13 @@
       ]
     },
     {
+      "name": "Python Scripting",
+      "level": "Avanzado",
+      "keywords": [
+        "Backend"
+      ]
+    },
+    {
       "name": "TypeScript",
       "level": "Avanzado",
       "keywords": [
@@ -165,6 +172,13 @@
       ]
     },
     {
+      "name": "Ionic",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Móvil", "Frontend", "Framework"
+      ]
+    },
+    {
       "name": "PostgreSQL",
       "level": "Avanzado",
       "keywords": [
@@ -183,6 +197,27 @@
       "level": "Avanzado",
       "keywords": [
         "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "GitHub Actions",
+      "level": "Avanzado",
+      "keywords": [
+        "CI/CD", "Automatización", "Despliegue Continuo", "Integración Continua"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "Avanzado",
+      "keywords": [
+        "CI/CD", "Automatización", "Despliegue Continuo", "Integración Continua"
+      ]
+    },
+    {
+      "name": "Linux",
+      "level": "Avanzado",
+      "keywords": [
+        "Server", "SO"
       ]
     }
   ],
@@ -247,7 +282,9 @@
         "Python",
         "WebScrapy",
         "FastAPI",
-        "DataScience"
+        "DataScience",
+        "PyTest",
+        "Jupyter Notebooks"
       ],
       "url": "https://github.com/vLorente/la-fede-teams-analytics"
     },
