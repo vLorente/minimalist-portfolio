@@ -244,6 +244,26 @@
   }],
   "projects": [
     {
+      "name": "Thirtys Album",
+      "isActive": true,
+      "github": "https://github.com/vLorente/thirtys-album",
+      "description": "Thirtys Album es una plataforma web colaborativa donde grupos de personas pueden subir, compartir y visualizar imágenes de momentos compartidos, como viajes o eventos.",
+      "highlights": [
+        "Astro",
+        "TailwindCSS",
+        "React",
+        "Firebase",
+        "Firebase Auth",
+        "Firebase Storage",
+        "Firebase Firestore",
+        "Image Gallery",
+        "Image Optimization",
+        "Vercel",
+        "Git"
+      ],
+      "url": "https://thirtys-album.vlorente.dev"
+    },
+    {
       "name": "Página Web Boda",
       "isActive": true,
       "github": "https://github.com/vLorente/boda-nc",
