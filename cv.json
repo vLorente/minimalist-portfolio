@@ -320,7 +320,8 @@
         "Python scripting",
         "Github Actions",
         "Poetry"
-      ]
+      ],
+      "url": "https://github.com/vLorente/django_tictactoe"
     },
     {
       "name": "React Cookie Guard",
