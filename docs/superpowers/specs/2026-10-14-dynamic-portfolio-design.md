@@ -33,10 +33,10 @@ Turn the static minimalist CV site into a dynamic, scroll-animated portfolio tha
 - **Motion module** `src/scripts/motion.ts`: imported once from the layout. Registers GSAP plugins and Lenis, then wires behaviors declared in markup through `data-anim` attributes:
   - `reveal` — fade + translateY on enter, staggered for children marked `data-anim-item`.
   - `split` — heading split into words/lines, staggered reveal.
-  - `scrub-words` — paragraph words go from muted to full color as the user scrolls.
+  - `scrub-words` — paragraph words go from low to full opacity as the user scrolls.
   - `counter` — number counts from 0 to `data-value` on enter.
   - `timeline` — vertical line draws with scroll progress; entries reveal in sequence.
-  - `marquee` — infinite horizontal stack strip.
+  - The stack marquee is a pure CSS animation in `Skills.astro` (paused under reduced motion).
   - Scroll progress bar in the nav.
   Components only declare attributes; all animation logic lives in this one module.
 - **Progressive enhancement**: the hidden initial state applies only under `html.js` (class added by an inline script in `<head>`). Without JS, all content is visible. With `prefers-reduced-motion: reduce`, Lenis is disabled and every element is shown in its final state with no animation.
@@ -49,7 +49,7 @@ Turn the static minimalist CV site into a dynamic, scroll-animated portfolio tha
 4. **Sobre mí** — summary with `scrub-words`.
 5. **Experiencia** — timeline with drawing line; each role shows company, position, place, dates, role line, achievements (grouped for StopCardio).
 6. **Competencias** — five groups as chip lists with staggered reveal; tech stack marquee below.
-7. **Proyectos** — cards with staggered entry and hover lift/tilt; links to site and GitHub; "activo" badge from `isActive`.
+7. **Proyectos** — cards with staggered entry and hover lift; links to site and GitHub; "activo" badge from `isActive`.
 8. **Formación** — education, certifications, languages in a compact grid.
 9. **Footer CTA** — large "¿Hablamos?" with email, LinkedIn, GitHub.
 
@@ -59,7 +59,7 @@ Existing section components are rewritten; `Section.astro` is kept as the shared
 
 - Easing: `expo.out` for entrances, `power3.inOut` for scrubbed movement.
 - Durations: 0.6–1.2 s for entrances; stagger 0.05–0.08 s.
-- Only animate `transform` and `opacity` (plus `color` for `scrub-words` and `scaleY` for the timeline line).
+- Only animate `transform` and `opacity` (plus `clipPath` for the hero photo).
 - Animations play once on enter; no reverse on scroll up except scrubbed ones.
 
 ## CV PDF
