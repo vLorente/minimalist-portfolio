@@ -16,7 +16,7 @@ const LINKS = [
 
 <header class="nav">
   <div class="container inner">
-    <a href="#inicio" class="logo" aria-label="Ir al inicio">{initials}</a>
+    <a href="#inicio" class="logo" aria-label={`${initials}, ir al inicio`}>{initials}</a>
     <nav aria-label="Secciones">
       <ul>
         {LINKS.map(({ href, label }) => <li><a href={href}>{label}</a></li>)}

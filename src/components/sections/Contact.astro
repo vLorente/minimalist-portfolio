@@ -18,15 +18,15 @@ const currentYear = new Date().getFullYear()
       <SocialLinks />
     </div>
   </div>
-  <footer class="container footer">
-    <p>© {currentYear} {name}</p>
-    <p>Hecho con Astro y GSAP</p>
-  </footer>
 </section>
+<footer class="container footer">
+  <p>© {currentYear} {name}</p>
+  <p>Hecho con Astro y GSAP</p>
+</footer>
 
 <style>
   .contact {
-    padding-block: clamp(6rem, 14vw, 10rem) 2rem;
+    padding-block: clamp(6rem, 14vw, 10rem) 0;
     border-top: 1px solid var(--line);
   }
 
@@ -69,6 +69,7 @@ const currentYear = new Date().getFullYear()
     gap: 1rem;
     margin-top: clamp(5rem, 10vw, 8rem);
     padding-top: 1.5rem;
+    padding-bottom: 2rem;
     border-top: 1px solid var(--line);
     color: var(--muted);
     font-size: 0.85rem;
