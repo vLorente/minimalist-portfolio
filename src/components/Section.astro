@@ -1,33 +1,46 @@
 ---
-// se ejecuta en el servidor o en build time <----
-const { title } = Astro.props
+interface Props {
+  id?: string
+  index?: string
+  title?: string
+}
+
+const { id, index, title } = Astro.props
 ---
 
-<section>
-  {title && <h2>{title}</h2>}
-  <slot />
+<section id={id}>
+  <div class="container">
+    {
+      title && (
+        <header>
+          {index && <span class="eyebrow">{index}</span>}
+          <h2 data-split>{title}</h2>
+        </header>
+      )
+    }
+    <slot />
+  </div>
 </section>
-
-<script>
-  // se ejecuta en el cliente <----
-</script>
 
 <style>
   section {
-    max-width: 700px;
-    margin: 0 auto 48px;
+    padding-block: clamp(5rem, 12vw, 9rem);
+  }
+
+  header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: clamp(2.5rem, 6vw, 4rem);
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
   }
 
   h2 {
-    margin-bottom: 8px;
-    font-weight: 700;
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
-
-  @media (width <= 700px) {
-    section {
-      margin-bottom: 38px;
-    }
+    font-family: var(--font-display);
+    font-size: clamp(2.75rem, 7vw, 5.5rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
   }
 </style>

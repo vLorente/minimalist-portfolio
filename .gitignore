@@ -25,3 +25,6 @@ pnpm-debug.log*
 .vercel
 
 pnpm-lock.yaml
+
+# source CV (contains private contact data)
+docs/*.docx
