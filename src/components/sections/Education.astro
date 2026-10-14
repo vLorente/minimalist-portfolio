@@ -1,68 +1,110 @@
 ---
-import Section from "../Section.astro"
+import Section from "@/components/Section.astro"
+import { cv } from "@/data/cv"
+import { monthYear, year } from "@/lib/dates"
 
-import { education } from "@cv"
+const { education, certificates, languages } = cv
 ---
 
-<Section title="Educación">
-  <ul>
-    {
-      education.map(({ institution, startDate, endDate, area }) => {
-        const startYear = new Date(startDate).getFullYear()
-        const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual"
-        const years = `${startYear} - ${endYear}`
-
-        return (
-          <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{institution}</h3>
-                </div>
-
-                {/* <time>{years}</time> */}
-              </header>
-
-              <footer>
-                <p>{area}</p>
-              </footer>
-            </article>
-          </li>
-        )
-      })
-    }
-  </ul>
+<Section id="formacion" index="06" title="Formación">
+  <div class="cols">
+    <div data-reveal>
+      <h3>Estudios</h3>
+      <ul class="list">
+        {
+          education.map(({ institution, area, startDate, endDate, summary }) => (
+            <li>
+              <p class="dates">
+                {year(startDate)} — {year(endDate)}
+              </p>
+              <p class="title">{area}</p>
+              <p class="meta">{institution}</p>
+              {summary && <p class="note">{summary}</p>}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div data-reveal data-delay="0.1">
+      <h3>Certificaciones</h3>
+      <ul class="list">
+        {
+          certificates.map(({ name, issuer, date }) => (
+            <li>
+              <p class="dates">{monthYear(date)}</p>
+              <p class="title">{name}</p>
+              <p class="meta">{issuer}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div data-reveal data-delay="0.2">
+      <h3>Idiomas</h3>
+      <ul class="list">
+        {
+          languages.map(({ language, fluency }) => (
+            <li>
+              <p class="title">{language}</p>
+              <p class="meta">{fluency}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
 </Section>
 
 <style>
-  ul {
+  .cols {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.8fr;
+    gap: 3rem;
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 1.75rem;
   }
 
-  article h3 {
+  .dates {
+    color: var(--accent);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+  }
+
+  .title {
+    margin-top: 0.35rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: #111;
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
+  .meta {
+    margin-top: 0.2rem;
+    color: var(--muted);
+    font-size: 0.92rem;
   }
 
-  time {
-    color: #555;
-    font-size: 0.85rem;
-    min-width: 102px;
+  .note {
+    margin-top: 0.5rem;
+    color: #bdbdbd;
+    font-size: 0.88rem;
+    line-height: 1.5;
   }
 
-  @media (width <= 700px) {
-    time {
-      text-align: right;
+  @media (width <= 800px) {
+    .cols {
+      grid-template-columns: 1fr;
     }
   }
 </style>
