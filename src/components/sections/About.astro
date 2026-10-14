@@ -1,12 +1,19 @@
 ---
-import Section from "../Section.astro"
+import Section from "@/components/Section.astro"
+import { cv } from "@/data/cv"
 
-import { basics } from "@cv"
-const { summary } = basics
+const { summary } = cv.basics
 ---
 
-<Section title="Sobre mí">
-  <p>
-    {summary}
-  </p>
+<Section id="sobre-mi" index="02" title="Sobre mí">
+  <p class="summary" data-scrub-words>{summary}</p>
 </Section>
+
+<style>
+  .summary {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+</style>

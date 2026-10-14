@@ -1,92 +1,172 @@
 ---
-import Section from "../Section.astro"
+import Section from "@/components/Section.astro"
+import { cv } from "@/data/cv"
+import { year } from "@/lib/dates"
 
-import { work } from "@cv"
+const { work } = cv
 ---
 
-<Section title="Experiencia laboral">
-  <ul>
-    {
-      work.map(
-        ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
-          const years = `${startYear} - ${endYear}`
-
-          return (
-            <li>
-              <article>
-                <header>
-                  <div>
-                    <h3>
-                      {url ?
-                       (<a href={url} title={`Ver ${name}`} target="_blank">
-                        {name}
-                      </a>) : (<span title={name}>
-                        {name}
-                      </span>)
-                      }
-                    </h3>
-                    <h4>{position}</h4>
-                  </div>
-
-                  {/* <time>{years}</time> */}
-                </header>
-
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          )
-        }
-      )
-    }
-  </ul>
+<Section id="experiencia" index="03" title="Experiencia">
+  <div class="timeline" data-timeline>
+    <span class="line" data-timeline-line aria-hidden="true"></span>
+    <ol>
+      {
+        work.map(({ name, position, location, startDate, endDate, summary, highlights, groups }) => (
+          <li class="job" data-reveal>
+            <header>
+              <p class="dates">
+                {year(startDate)} — {year(endDate)}
+              </p>
+              <h3>{name}</h3>
+              <p class="position">
+                {position} · {location}
+              </p>
+            </header>
+            <div class="body">
+              {summary && <p class="summary">{summary}</p>}
+              {highlights.length > 0 && (
+                <ul class="highlights">
+                  {highlights.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              )}
+              {groups?.map(({ title, highlights }) => (
+                <div>
+                  <h4>{title}</h4>
+                  <ul class="highlights">
+                    {highlights.map((item) => (
+                      <li>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
 </Section>
 
 <style>
-  ul {
+  .timeline {
+    --indent: clamp(1.5rem, 4vw, 3rem);
+    position: relative;
+    padding-left: var(--indent);
+  }
+
+  .timeline::before,
+  .line {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+  }
+
+  .timeline::before {
+    background: var(--line);
+  }
+
+  .line {
+    background: var(--accent);
+    transform-origin: top;
+  }
+
+  ol {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: clamp(3.5rem, 8vw, 6rem);
   }
 
-  article h3 {
-    font-weight: 500;
-    color: #111;
+  .job {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: 1.5rem 3rem;
   }
 
-  article a {
-    color: #111;
+  .job::before {
+    content: "";
+    position: absolute;
+    top: 0.6rem;
+    left: calc(-1 * var(--indent) - 5px);
+    width: 11px;
+    height: 11px;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    background: var(--bg);
   }
 
-  article a:hover {
-    text-decoration: underline;
-  }
-
-  article h4 {
-    color: #222;
-    font-weight: 400;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
-
-  time {
-    color: #555;
+  .dates {
+    color: var(--accent);
     font-size: 0.85rem;
-    min-width: 102px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
-  @media (width <= 700px) {
-    time {
-      text-align: right;
+  h3 {
+    margin-top: 0.5rem;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    line-height: 1.05;
+  }
+
+  .position {
+    margin-top: 0.5rem;
+    color: var(--muted);
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .summary {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  h4 {
+    margin-bottom: 0.75rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .highlights li {
+    position: relative;
+    padding-left: 1.25rem;
+    color: #c9c9c9;
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .highlights li::before {
+    content: "";
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    width: 0.5rem;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  @media (width <= 800px) {
+    .job {
+      grid-template-columns: 1fr;
     }
   }
 </style>
