@@ -83,6 +83,7 @@ function initScrubWords() {
   gsap.utils.toArray<HTMLElement>("[data-scrub-words]").forEach((el) => {
     SplitText.create(el, {
       type: "words",
+      aria: "none",
       onSplit(self) {
         return gsap.fromTo(
           self.words,
@@ -102,6 +103,7 @@ function initScrubWords() {
 function initCounters() {
   gsap.utils.toArray<HTMLElement>("[data-counter]").forEach((el) => {
     const target = Number(el.dataset.value)
+    if (target < 10) return
     const state = { value: 0 }
     el.textContent = "0"
     gsap.to(state, {
