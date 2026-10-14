@@ -4,7 +4,7 @@ import "@fontsource/instrument-serif/400-italic.css"
 import "@fontsource-variable/inter-tight"
 import "@/styles/global.css"
 
-import { basics } from "@cv"
+import { cv } from "@/data/cv"
 
 interface Props {
   title: string
@@ -12,7 +12,7 @@ interface Props {
 
 const { title } = Astro.props
 
-const { image, summary, url } = basics
+const { image, summary, url } = cv.basics
 ---
 
 <!doctype html>

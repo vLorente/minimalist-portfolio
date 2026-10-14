@@ -1,183 +1,150 @@
 ---
-import { basics } from "@cv"
-import Section from "@/components/Section.astro"
-import Mail from "@/icons/Mail.astro"
-import Phone from "@/icons/Phone.astro"
-import X from "@/icons/X.astro"
-import LinkedIn from "@/icons/LinkedIn.astro"
-import GitHub from "@/icons/GitHub.astro"
+import { cv, CV_PDF } from "@/data/cv"
+import SocialLinks from "@/components/SocialLinks.astro"
 import WorldMap from "@/icons/WorldMap.astro"
-import type { SocialIcon } from "@/types"
 
-const { name, label, image, location, profiles, phone, email } = basics
-const { city, region } = location
-
-const SOCIAL_ICONS: SocialIcon = {
-  GitHub,
-  LinkedIn,
-  X,
-}
-
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
-const linkedUrl = linkedInfo?.url
-
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+const { name, label, headline, image, location } = cv.basics
 ---
 
-<Section>
-  <div class="container">
-    <div class="info">
-      <h1>{name}</h1>
-      <h2>{label}</h2>
-      <span>
+<section class="hero" id="inicio">
+  <div class="container grid">
+    <div class="intro">
+      <p class="eyebrow" data-reveal>{name}</p>
+      <h1 data-split="load">{headline}</h1>
+      <p class="label" data-reveal data-delay="0.4">{label}</p>
+      <p class="location" data-reveal data-delay="0.5">
         <WorldMap />
-        {city}, {region}
-      </span>
-      <footer class="print">
-        {printInfo}
-      </footer>
-      <footer class="no-print">
-        {
-          email && (
-            <a
-              href={`mailto:${email}`}
-              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail />
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Llamar por teléfono a ${name} al número ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Phone />
-            </a>
-          )
-        }
-        {
-          profiles.map(({ network, url, username }) => {
-            const Icon = SOCIAL_ICONS[network]
-
-            return (
-              <a
-                href={url}
-                title={`Visitar el perfil de ${name} en ${network}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon />
-              </a>
-            )
-          })
-        }
-      </footer>
+        {location.city}, {location.region}
+      </p>
+      <div class="actions" data-reveal data-delay="0.6">
+        <a class="btn btn-primary" href={CV_PDF} download>Descargar CV</a>
+        <a class="btn" href="#contacto">Contactar</a>
+        <SocialLinks />
+      </div>
     </div>
-    <figure>
-      <img src={image} alt={name} />
+    <figure data-clip>
+      <img src={image} alt={`Retrato de ${name}`} width="320" height="400" />
     </figure>
   </div>
-</Section>
+  <a class="scroll-hint" href="#impacto" aria-label="Ir a la sección de impacto"><span></span></a>
+</section>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  .info {
+  .hero {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding-right: 32px;
+    justify-content: center;
+    min-height: 100svh;
+    padding-block: 7rem 4rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 
   h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    color: #444;
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 9vw, 7.5rem);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
     text-wrap: balance;
   }
 
+  .label {
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  figure {
+    width: clamp(180px, 24vw, 320px);
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
   img {
-    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    width: 128px;
-    border-radius: 16px;
+    filter: grayscale(1) contrast(1.05);
+    transition: filter 0.6s;
   }
 
-  span {
-    color: #666;
+  figure:hover img {
+    filter: none;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    translate: -50% 0;
     display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
-  }
-
-  footer {
-    color: #555;
-    font-size: 0.65rem;
-    display: flex;
-    gap: 4px;
-    margin-top: 8px;
-  }
-
-  footer a {
-    color: #777;
-    display: inline-flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid #eee;
-    padding: 4px;
-    height: 32px;
-    width: 32px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    width: 24px;
+    height: 40px;
+    padding-top: 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
   }
 
-  footer a:hover {
-    background: #eee;
-    border: 1px solid #ddd;
+  .scroll-hint span {
+    width: 3px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--accent);
+    animation: scroll-hint 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  }
+
+  @keyframes scroll-hint {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(14px);
+    }
   }
 
   @media (width <= 700px) {
-    .container {
-      flex-direction: column-reverse;
-    }
-
-    .info {
-      justify-content: center;
-      align-items: center;
-      padding-right: 0;
-      text-align: center;
+    .grid {
+      grid-template-columns: 1fr;
     }
 
     figure {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      order: -1;
+      width: 140px;
     }
 
-    h2 {
-      text-wrap: balance;
-    }
-
-    figure {
-      margin: 0 auto;
+    .scroll-hint {
+      display: none;
     }
   }
 </style>

@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro"
+import Nav from "@/components/Nav.astro"
 
 import About from "@/components/sections/About.astro"
 import Education from "@/components/sections/Education.astro"
@@ -8,11 +9,12 @@ import Hero from "@/components/sections/Hero.astro"
 import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
 
-import { basics } from "@cv"
-const { name, label } = basics
+import { cv } from "@/data/cv"
+const { name, label } = cv.basics
 ---
 
-<Layout title={`Portafolio de ${name} - ${label}`}>
+<Layout title={`${name} — ${label}`}>
+  <Nav />
   <main>
     <Hero />
     <About />

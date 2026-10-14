@@ -1,0 +1,67 @@
+---
+import { cv } from "@/data/cv"
+import GitHub from "@/icons/GitHub.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import Mail from "@/icons/Mail.astro"
+import type { SocialIcon } from "@/types"
+
+const { name, email, profiles } = cv.basics
+
+const SOCIAL_ICONS: SocialIcon = {
+  GitHub,
+  LinkedIn,
+}
+---
+
+<ul class="social">
+  <li>
+    <a href={`mailto:${email}`} aria-label={`Enviar un correo a ${name}`}>
+      <Mail />
+    </a>
+  </li>
+  {
+    profiles.map(({ network, url }) => {
+      const Icon = SOCIAL_ICONS[network]
+      return (
+        Icon && (
+          <li>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Perfil de ${name} en ${network}`}
+            >
+              <Icon />
+            </a>
+          </li>
+        )
+      )
+    })
+  }
+</ul>
+
+<style>
+  .social {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    transition:
+      color 0.3s,
+      border-color 0.3s;
+  }
+
+  a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+</style>
