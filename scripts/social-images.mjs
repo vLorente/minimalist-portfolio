@@ -42,7 +42,12 @@ const ogHtml = `<!doctype html><html><head><meta charset="utf-8"><style>${fonts}
   .role { margin: 0; font: 500 26px/1.3 "Inter Tight"; }
   .host { margin: 0; display: flex; align-items: center; gap: 16px; font: 500 22px/1 "Inter Tight"; color: #c6ff3d; }
   .bar { width: 48px; height: 3px; background: #c6ff3d; }
-  img { width: 360px; height: 450px; object-fit: cover; border-radius: 20px; filter: grayscale(1) contrast(1.05); }
+  figure { position: relative; flex: none; width: 360px; height: 450px; margin: 0; border-radius: 20px; overflow: hidden; }
+  figure img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.75) contrast(1.1) brightness(0.95); }
+  /* Same color grade as the hero photo (src/components/sections/Hero.astro). */
+  figure::before, figure::after { content: ""; position: absolute; inset: 0; }
+  figure::before { background: radial-gradient(120% 90% at 70% 20%, transparent 45%, #0b0b0c 100%); }
+  figure::after { background: linear-gradient(200deg, #c6ff3d 0%, transparent 45%); mix-blend-mode: soft-light; opacity: 0.5; }
 </style></head><body><main class="card">
   <div class="text">
     <p class="name">${name}</p>
@@ -50,7 +55,7 @@ const ogHtml = `<!doctype html><html><head><meta charset="utf-8"><style>${fonts}
     <p class="role">${role}</p>
     <p class="host"><span class="bar"></span>${host}</p>
   </div>
-  <img src="${photo}" alt="">
+  <figure><img src="${photo}" alt=""></figure>
 </main></body></html>`
 
 const iconHtml = `<!doctype html><html><head><meta charset="utf-8"><style>${fonts}
