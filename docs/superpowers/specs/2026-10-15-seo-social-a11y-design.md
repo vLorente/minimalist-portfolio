@@ -27,7 +27,7 @@ Make shared links (LinkedIn, WhatsApp, Slack, X) show a branded preview, fix the
 | Description | `Product Owner y Technical Product Manager con base de ingeniería: producto de principio a fin, APIs e integraciones y resultados medibles. Madrid o remoto.` (155 chars), in `basics.seo.description`. |
 | Sitemap / robots | Astro static endpoints `src/pages/sitemap.xml.ts` and `src/pages/robots.txt.ts`, built from `basics.url`. No `@astrojs/sitemap`: the site has one page. |
 | Structured data | JSON-LD `Person` from `cv.json`: name, jobTitle, description, url, image, email, address, sameAs, current employer, alumniOf, knowsLanguage. |
-| Favicon | New SVG "VL" in lime on `#0b0b0c`, plus a 180×180 `apple-touch-icon.png`. |
+| Favicon | SVG "VL" in Instrument Serif outlines, `#ededed` on `#0b0b0c` (matches the header logo), plus a 180×180 `apple-touch-icon.png`. |
 
 ## Preview card layout (1200×630)
 
