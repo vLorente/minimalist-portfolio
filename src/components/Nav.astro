@@ -1,0 +1,91 @@
+---
+import { cv, CV_PDF } from "@/data/cv"
+
+const initials = cv.basics.name
+  .split(" ")
+  .slice(0, 2)
+  .map((word) => word[0])
+  .join("")
+
+const LINKS = [
+  { href: "#experiencia", label: "Experiencia" },
+  { href: "#proyectos", label: "Proyectos" },
+  { href: "#contacto", label: "Contacto" },
+]
+---
+
+<header class="nav">
+  <div class="container inner">
+    <a href="#inicio" class="logo" aria-label={`${initials}, ir al inicio`}>{initials}</a>
+    <nav aria-label="Secciones">
+      <ul>
+        {LINKS.map(({ href, label }) => <li><a href={href}>{label}</a></li>)}
+      </ul>
+    </nav>
+    <a class="btn btn-primary cv" href={CV_PDF} download>Descargar CV</a>
+  </div>
+  <span class="progress" data-progress aria-hidden="true"></span>
+</header>
+
+<style>
+  .nav {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 50;
+    background: rgb(11 11 12 / 0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 64px;
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav a {
+    color: var(--muted);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--text);
+  }
+
+  .cv {
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .progress {
+    display: none;
+    position: absolute;
+    inset: auto 0 -1px;
+    height: 2px;
+    background: var(--accent);
+    transform-origin: left;
+  }
+
+  :global(html.motion) .progress {
+    display: block;
+  }
+
+  @media (width <= 700px) {
+    nav {
+      display: none;
+    }
+  }
+</style>

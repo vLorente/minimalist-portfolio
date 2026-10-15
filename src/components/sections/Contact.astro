@@ -1,0 +1,77 @@
+---
+import SocialLinks from "@/components/SocialLinks.astro"
+import { cv } from "@/data/cv"
+
+const { name, email } = cv.basics
+const currentYear = new Date().getFullYear()
+---
+
+<section id="contacto" class="contact">
+  <div class="container">
+    <p class="eyebrow" data-reveal>¿Buscas a alguien que una negocio, producto y tecnología?</p>
+    <h2 data-split>¿Hablamos?</h2>
+    <div class="links" data-reveal>
+      <a class="email" href={`mailto:${email}`}>
+        {email}
+        <span aria-hidden="true">↗</span>
+      </a>
+      <SocialLinks />
+    </div>
+  </div>
+</section>
+<footer class="container footer">
+  <p>© {currentYear} {name}</p>
+  <p>Hecho con Astro y GSAP</p>
+</footer>
+
+<style>
+  .contact {
+    padding-block: clamp(6rem, 14vw, 10rem) 0;
+    border-top: 1px solid var(--line);
+  }
+
+  h2 {
+    margin-block: 1.5rem 2.5rem;
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 14vw, 12rem);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .email {
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--accent);
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    transition: color 0.3s;
+  }
+
+  .email:hover {
+    color: var(--accent);
+  }
+
+  .email span {
+    margin-left: 0.25rem;
+    color: var(--accent);
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: clamp(5rem, 10vw, 8rem);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
