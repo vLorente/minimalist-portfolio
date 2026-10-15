@@ -60,7 +60,7 @@ const ogHtml = `<!doctype html><html><head><meta charset="utf-8"><style>${fonts}
 
 const iconHtml = `<!doctype html><html><head><meta charset="utf-8"><style>${fonts}
   .icon { width: 180px; height: 180px; display: grid; place-items: center;
-    font: 400 104px/1 "Instrument Serif"; color: #c6ff3d; letter-spacing: -0.04em; }
+    background: #0b0b0c; font: 400 132px/1 "Instrument Serif"; color: #ededed; }
 </style></head><body><div class="icon">VL</div></body></html>`
 
 const browser = await chromium.launch()
