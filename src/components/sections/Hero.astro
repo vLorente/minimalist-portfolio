@@ -17,7 +17,7 @@ const { name, label, headline, image, location, availability } = cv.basics
         {location.city}, {location.region} · {availability}
       </p>
       <div class="actions" data-reveal data-delay="0.6">
-        <a class="btn btn-primary" href={CV_PDF} download>Descargar CV</a>
+        <a class="btn btn-primary" href={CV_PDF} type="application/pdf" download>Descargar CV<span class="sr-only"> (PDF)</span></a>
         <a class="btn" href="#contacto">Contactar</a>
         <SocialLinks />
       </div>

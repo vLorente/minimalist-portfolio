@@ -22,7 +22,7 @@ const LINKS = [
         {LINKS.map(({ href, label }) => <li><a href={href}>{label}</a></li>)}
       </ul>
     </nav>
-    <a class="btn btn-primary cv" href={CV_PDF} download>Descargar CV</a>
+    <a class="btn btn-primary cv" href={CV_PDF} type="application/pdf" download>Descargar CV<span class="sr-only"> (PDF)</span></a>
   </div>
   <span class="progress" data-progress aria-hidden="true"></span>
 </header>
