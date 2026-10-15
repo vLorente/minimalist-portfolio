@@ -13,6 +13,7 @@ Package manager is pnpm (per README; `pnpm-lock.yaml` is gitignored).
 - `pnpm dev` (or `pnpm start`) — dev server at http://localhost:4321
 - `pnpm build` — runs `astro check` (type checking) then `astro build`; this is the only verification step, there are no tests or linter
 - `pnpm preview` — preview the production build
+- `pnpm social-images` — regenerates `public/og.jpg` (link preview, 1200×630) and `public/apple-touch-icon.png` from `cv.json` with Playwright; run it after changing the headline, label or photo, and commit the images.
 
 ## Architecture
 

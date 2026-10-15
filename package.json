@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "social-images": "node scripts/social-images.mjs",
     "astro": "astro"
   },
   "dependencies": {
@@ -19,5 +20,8 @@
     "gsap": "3.15.0",
     "lenis": "1.3.26",
     "typescript": "5.3.3"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
   }
 }
