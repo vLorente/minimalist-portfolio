@@ -3,7 +3,7 @@ import { cv, CV_PDF } from "@/data/cv"
 import SocialLinks from "@/components/SocialLinks.astro"
 import WorldMap from "@/icons/WorldMap.astro"
 
-const { name, label, headline, image, location } = cv.basics
+const { name, label, headline, image, location, availability } = cv.basics
 ---
 
 <section class="hero" id="inicio">
@@ -14,7 +14,7 @@ const { name, label, headline, image, location } = cv.basics
       <p class="label" data-reveal data-delay="0.4">{label}</p>
       <p class="location" data-reveal data-delay="0.5">
         <WorldMap />
-        {location.city}, {location.region}
+        {location.city}, {location.region} · {availability}
       </p>
       <div class="actions" data-reveal data-delay="0.6">
         <a class="btn btn-primary" href={CV_PDF} download>Descargar CV</a>
