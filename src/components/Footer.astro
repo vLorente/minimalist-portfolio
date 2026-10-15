@@ -1,0 +1,26 @@
+---
+import { cv } from "@/data/cv"
+
+const { name } = cv.basics
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="container footer">
+  <p>© {currentYear} {name}</p>
+  <p>Hecho con Astro y GSAP</p>
+</footer>
+
+<style>
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: clamp(5rem, 10vw, 8rem);
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>

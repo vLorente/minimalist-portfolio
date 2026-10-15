@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "motion-design": {
+      "source": "LottieFiles/motion-design-skill",
+      "sourceType": "github",
+      "skillPath": "skills/motion-design/SKILL.md",
+      "computedHash": "4f16f46c81f25a2a25b7a4720b7ea001e65f384b31b5b7f4b455fef87fbc9016"
+    },
+    "scroll-world": {
+      "source": "oso95/scroll-world",
+      "sourceType": "github",
+      "skillPath": "skills/scroll-world/SKILL.md",
+      "computedHash": "07ad6d6bad1e154a271e7bf1ef582b4e56c892caba56aff2674e761dc34c6859"
+    }
+  }
+}
