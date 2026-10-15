@@ -86,7 +86,7 @@
     {
       "name": "StopCardio",
       "position": "Growth Engineer / Technical Product Strategist",
-      "location": "España",
+      "location": "Madrid",
       "url": "",
       "startDate": "2025-11-01",
       "endDate": null,
@@ -119,14 +119,28 @@
       ]
     },
     {
-      "name": "Autónomo",
+      "name": "Freelance",
       "position": "Consultor ERP y producto",
       "url": "",
       "startDate": "2024-04-01",
       "endDate": "2025-09-30",
-      "summary": "ERP a medida para 2–3 clientes del sector industrial y de producción.",
-      "highlights": [
-        "Ciclo completo: análisis de requisitos con el cliente, desarrollo, implantación y formación de usuarios, y mantenimiento y soporte."
+      "summary": "Etapa de autogestión: llevé solo y en paralelo los proyectos de 3 PYMEs del sector industrial, de principio a fin: presupuestos y negociación, planificación y entregas, análisis de requisitos, desarrollo, implantación, formación y soporte.",
+      "highlights": [],
+      "groups": [
+        {
+          "title": "Adaptación a Verifactu",
+          "highlights": [
+            "Adapté a la normativa Verifactu el ERP a medida (Tryton) de los 3 clientes: 2 ya facturan con el sistema y el tercero está preparado para cuando entre en vigor la obligación."
+          ]
+        },
+        {
+          "title": "Procesos y ventas",
+          "highlights": [
+            "Definí, estandaricé y automaticé sus procesos en el ERP y el CRM a partir de entrevistas con stakeholders, apoyándome en mi experiencia previa en implantación de ERP.",
+            "Adapté el ERP de cada cliente a su funnel de venta para ordenar y mejorar sus procesos comerciales.",
+            "Diseñé un CRM a medida para los equipos comerciales, con dashboards en Metabase para la dirección: mejoró la atención a los clientes y el seguimiento de las ventas, y con ello la facturación."
+          ]
+        }
       ]
     },
     {
@@ -225,13 +239,24 @@
       ]
     },
     {
+      "name": "Procesos",
+      "keywords": [
+        "Definición de procesos",
+        "Estandarización",
+        "Optimización de procesos",
+        "Automatización con ERP y CRM"
+      ]
+    },
+    {
       "name": "Negocio y operaciones",
       "keywords": [
         "Go-to-market",
         "Estudio de mercado",
         "Análisis normativo",
+        "Cumplimiento normativo (Verifactu)",
         "Segmentación de base",
         "Diseño de flujo de venta",
+        "Presupuestos y negociación con clientes",
         "Selección de proveedores",
         "CTI / contact center",
         "Speed-to-lead",
@@ -309,7 +334,8 @@
         "ABAP",
         "SD / MM / PP",
         "Tryton",
-        "Odoo"
+        "Odoo",
+        "CRM a medida"
       ]
     }
   ],
