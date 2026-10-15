@@ -1,0 +1,31 @@
+---
+import { absoluteUrl, cv } from "@/data/cv"
+
+const { name, label, email, image, location, profiles, seo } = cv.basics
+const currentJob = cv.work.find(({ endDate }) => endDate === null)
+
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name,
+  jobTitle: label.split(" · ")[0],
+  description: seo.description,
+  url: absoluteUrl("/"),
+  image: absoluteUrl(image),
+  email: `mailto:${email}`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: location.city,
+    addressCountry: location.countryCode,
+  },
+  sameAs: profiles.map(({ url }) => url),
+  ...(currentJob && { worksFor: { "@type": "Organization", name: currentJob.name } }),
+  alumniOf: cv.education.map(({ institution }) => ({
+    "@type": "EducationalOrganization",
+    name: institution,
+  })),
+  knowsLanguage: cv.languages.map(({ language }) => language),
+}
+---
+
+<script is:inline type="application/ld+json" set:html={JSON.stringify(person)} />

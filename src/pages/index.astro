@@ -12,10 +12,10 @@ import Skills from "@/components/sections/Skills.astro"
 
 import { cv } from "@/data/cv"
 
-const { name, label } = cv.basics
+const { seo } = cv.basics
 ---
 
-<Layout title={`${name} — ${label}`}>
+<Layout title={seo.title} description={seo.description}>
   <Nav />
   <main>
     <Hero />

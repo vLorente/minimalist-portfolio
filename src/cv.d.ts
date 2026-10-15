@@ -16,11 +16,17 @@ export interface Basics {
   email: string
   url: string
   summary: string
+  seo: Seo
   location: Location
   availability: string
   profiles: Array<Profile>
   metrics: Array<Metric>
   stack: Array<string>
+}
+
+export interface Seo {
+  title: string
+  description: string
 }
 
 export interface Location {

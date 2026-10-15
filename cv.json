@@ -5,8 +5,12 @@
     "headline": "Convierto problemas de negocio en producto.",
     "image": "/me.webp",
     "email": "vlorentejimenez@gmail.com",
-    "url": "https://vlorente.dev",
+    "url": "https://www.vlorente.dev",
     "summary": "Perfil de producto con base de ingeniería: más de 8 años entre desarrollo y producto, y rol de Product Owner / Product Manager desde 2018. Uno tres cosas que rara vez van juntas: criterio técnico real, porque he diseñado APIs y arquitectura y he programado en Python, TypeScript y SAP ABAP; gestión de producto de principio a fin, con discovery, roadmap, backlog, historias de usuario y métricas; y orientación a negocio con resultados medibles: he lanzado nuevas líneas de negocio, he liderado la implantación de sistemas críticos y he mejorado costes y tiempos con cifras.",
+    "seo": {
+      "title": "Valentín Lorente — Product Owner y Technical Product Manager",
+      "description": "Product Owner y Technical Product Manager con base de ingeniería: producto de principio a fin, APIs e integraciones y resultados medibles. Madrid o remoto."
+    },
     "location": {
       "city": "Madrid",
       "region": "España",
