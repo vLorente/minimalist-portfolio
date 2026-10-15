@@ -28,4 +28,4 @@ const person = {
 }
 ---
 
-<script is:inline type="application/ld+json" set:html={JSON.stringify(person)} />
+<script is:inline type="application/ld+json" set:html={JSON.stringify(person).replace(/</g, "\\u003c")} />
