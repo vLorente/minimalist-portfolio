@@ -52,7 +52,7 @@ export interface Metric {
 export interface Work {
   name: string
   position: string
-  location: string
+  location?: string
   url: string
   startDate: string
   endDate: string | null
