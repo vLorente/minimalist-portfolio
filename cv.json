@@ -6,7 +6,7 @@
     "image": "/me.webp",
     "email": "vlorentejimenez@gmail.com",
     "url": "https://www.vlorente.dev",
-    "summary": "Perfil de producto con base de ingeniería: más de 8 años entre desarrollo y producto, y rol de Product Owner / Product Manager desde 2018. Uno tres cosas que rara vez van juntas: criterio técnico real, porque he diseñado APIs y arquitectura y he programado en Python, TypeScript y SAP ABAP; gestión de producto de principio a fin, con discovery, roadmap, backlog, historias de usuario y métricas; y orientación a negocio con resultados medibles: he lanzado nuevas líneas de negocio, he liderado la implantación de sistemas críticos y he mejorado costes y tiempos con cifras.",
+    "summary": "Perfil de producto con base de ingeniería: más de 8 años entre desarrollo y producto, y rol de Product Owner / Product Manager desde 2018. Uno tres cosas que rara vez van juntas: criterio técnico real, porque he diseñado APIs con enfoque API First y he programado en Python, TypeScript y SAP ABAP; gestión de producto de principio a fin, con discovery, roadmap, backlog, historias de usuario y métricas; y orientación a negocio con resultados medibles: he lanzado nuevas líneas de negocio, he liderado la implantación de sistemas críticos y he mejorado costes, tiempos y calidad con cifras.",
     "seo": {
       "title": "Valentín Lorente — Product Owner y Technical Product Manager",
       "description": "Product Owner y Technical Product Manager con base de ingeniería: producto de principio a fin, APIs e integraciones y resultados medibles. Madrid o remoto."
@@ -45,18 +45,23 @@
         "detail": "Centros educativos y administración pública: de la idea a la primera venta en menos de 1 mes cada una."
       },
       {
-        "value": 40,
+        "value": 37,
         "prefix": "−",
         "suffix": "%",
         "label": "coste por lead (CPL)",
-        "detail": "Entre un 20 % y un 40 % según campaña, con landings segmentadas, tests A/B y mapas de calor."
+        "detail": "Con landings segmentadas por campaña y público, optimizadas con mapas de calor y tests A/B."
       },
       {
-        "value": 75,
+        "value": 16,
+        "label": "PYMEs con el ERP que definí desde cero",
+        "detail": "De desarrollo a medida a producto estandarizado; implantación por cliente un 75 % más rápida, de unas 4 semanas a 1."
+      },
+      {
+        "value": 60,
         "prefix": "−",
         "suffix": "%",
-        "label": "tiempo de implantación por cliente",
-        "detail": "De unas 4 semanas a 1, automatizando el despliegue del ERP."
+        "label": "incidencias en producción",
+        "detail": "Con metodologías orientadas a producto y estandarización técnica, y el 100 % de las entregas en plazo."
       }
     ],
     "stack": [
@@ -83,17 +88,17 @@
       "position": "Growth Engineer / Technical Product Strategist",
       "location": "España",
       "url": "",
-      "startDate": "2025-10-01",
+      "startDate": "2025-11-01",
       "endDate": null,
-      "summary": "Cardioprotección (desfibriladores), venta B2B con contact center y red comercial. Rol de Product Owner / Product Manager: roadmap y prioridades, presupuesto e inversión publicitaria, KPIs y reporting a dirección, y elección de proveedores y herramientas. Coordino a 4–6 personas de desarrollo, BI, ventas y contact center.",
+      "summary": "Cardioprotección (desfibriladores), venta B2B con contact center y red comercial. Rol de Product Owner / Product Manager: roadmap y prioridades, presupuesto e inversión publicitaria (Google Ads y Meta Ads), KPIs y reporting a dirección, y elección de proveedores y herramientas; hago de puente entre producto y marketing. Coordino a 4–6 personas de desarrollo, BI, ventas y contact center.",
       "highlights": [],
       "groups": [
         {
           "title": "Nuevas líneas de negocio",
           "highlights": [
             "Con el objetivo fijado por dirección, lideré en 2026 la puesta en marcha de 2 líneas de venta a nuevos targets, centros educativos y administración pública: de la idea a la primera venta en menos de 1 mes cada una.",
-            "Hice el estudio de mercado: análisis normativo de la obligatoriedad de cardioprotección por comunidad autónoma, censo de más de 10.000 entidades desde fuentes oficiales y penetración actual del mercado.",
-            "Segmenté la base, diseñé el flujo de venta completo (teleconcertación → visita comercial) y monté los sistemas que lo soportan: pipeline específico en el CRM, base de datos segmentada, automatizaciones y dashboards de KPIs. Coordiné a teleconcertadores, comerciales de campo y desarrollo/BI."
+            "Hice el estudio de mercado: análisis normativo de la obligatoriedad de cardioprotección por comunidad autónoma, censo de más de 40.000 entidades desde fuentes oficiales y penetración actual del mercado.",
+            "Segmenté la base, diseñé el flujo de venta completo (teleconcertación → visita comercial) y monté los sistemas que lo soportan: pipeline específico en el CRM (Odoo), base de datos segmentada, automatizaciones y dashboards de KPIs. Coordiné a teleconcertadores, comerciales de campo y desarrollo/BI."
           ]
         },
         {
@@ -107,10 +112,21 @@
           "title": "Producto de captación y growth",
           "highlights": [
             "Diseñé un ecosistema web propio para crear landing pages dinámicas: lanzar una campaña con landing pasó de 1–2 semanas a horas.",
-            "Reduje el coste por lead (CPL) entre un 20 % y un 40 % con landings segmentadas por campaña y público, optimizadas de forma iterativa con mapas de calor y tests A/B.",
+            "Reduje el coste por lead (CPL) un 37 % con landings segmentadas por campaña y público, optimizadas de forma iterativa con mapas de calor (Microsoft Clarity) y tests A/B.",
             "Integré la generación de leads con la herramienta de marcación, y fijo objetivos y hago seguimiento de los KPIs de ventas y contact center."
           ]
         }
+      ]
+    },
+    {
+      "name": "Autónomo",
+      "position": "Consultor ERP y producto",
+      "url": "",
+      "startDate": "2024-04-01",
+      "endDate": "2025-09-30",
+      "summary": "ERP a medida para 2–3 clientes del sector industrial y de producción.",
+      "highlights": [
+        "Ciclo completo: análisis de requisitos con el cliente, desarrollo, implantación y formación de usuarios, y mantenimiento y soporte."
       ]
     },
     {
@@ -126,16 +142,16 @@
         {
           "title": "Producto",
           "highlights": [
-            "Definí desde cero un ERP estandarizado para PYMEs, con discovery directo con clientes y usuarios, para pasar de desarrollo a medida a modelo de producto.",
+            "Definí desde cero un ERP estandarizado para PYMEs, con discovery directo con clientes y usuarios, para pasar de desarrollo a medida a modelo de producto. Implantado en 16 PYMEs hasta mi salida.",
             "Llevaba y priorizaba el backlog en Jira y escribía historias de usuario con criterios de aceptación, con metodología Agile/Scrum.",
-            "Introduje metodologías orientadas a producto y estandarización técnica, con mejoras en plazos y estabilidad."
+            "Introduje metodologías orientadas a producto y estandarización técnica: las incidencias bajaron un 60 % y el 100 % de las entregas llegó en plazo."
           ]
         },
         {
           "title": "API e integraciones",
           "highlights": [
-            "Fui dueño de la API del ERP como producto: la diseñaba y decidía su evolución, y la consumían las aplicaciones web y móviles y otros sistemas.",
-            "Contrato en OpenAPI/Swagger, versionado con retrocompatibilidad y cambios acordados con los consumidores.",
+            "Fui dueño de la API del ERP como producto: la diseñaba y decidía su evolución, y la consumían 2–3 sistemas (aplicaciones web y móviles y otros sistemas).",
+            "Enfoque API First: contrato en OpenAPI/Swagger acordado antes de desarrollar, versionado con retrocompatibilidad y cambios acordados con los consumidores.",
             "Aplicaciones web y móviles integradas (Angular/Ionic) para los procesos de ventas y almacén."
           ]
         },
@@ -224,6 +240,14 @@
       ]
     },
     {
+      "name": "Marketing y analítica",
+      "keywords": [
+        "Google Ads",
+        "Meta Ads",
+        "Microsoft Clarity"
+      ]
+    },
+    {
       "name": "Gestión",
       "keywords": [
         "Agile / Scrum",
@@ -238,6 +262,7 @@
     {
       "name": "APIs e integraciones",
       "keywords": [
+        "API First",
         "OpenAPI / Swagger",
         "Versionado de APIs",
         "Integración con CRM"
@@ -278,12 +303,13 @@
       ]
     },
     {
-      "name": "ERP",
+      "name": "ERP y CRM",
       "keywords": [
         "SAP",
         "ABAP",
         "SD / MM / PP",
-        "Tryton"
+        "Tryton",
+        "Odoo"
       ]
     }
   ],
