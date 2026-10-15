@@ -8,7 +8,6 @@ import Education from "@/components/sections/Education.astro"
 import Experience from "@/components/sections/Experience.astro"
 import Hero from "@/components/sections/Hero.astro"
 import Impact from "@/components/sections/Impact.astro"
-import Projects from "@/components/sections/Projects.astro"
 import Skills from "@/components/sections/Skills.astro"
 
 import { cv } from "@/data/cv"
@@ -24,7 +23,7 @@ const { name, label } = cv.basics
     <About />
     <Experience />
     <Skills />
-    <Projects />
+    {/* Proyectos is disabled for now: the site is focused on product roles. Re-add <Projects /> here to restore it. */}
     <Education />
     <Contact />
   </main>

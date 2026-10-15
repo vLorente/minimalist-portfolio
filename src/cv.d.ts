@@ -17,6 +17,7 @@ export interface Basics {
   url: string
   summary: string
   location: Location
+  availability: string
   profiles: Array<Profile>
   metrics: Array<Metric>
   stack: Array<string>
