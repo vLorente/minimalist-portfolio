@@ -1,15 +1,15 @@
 {
   "basics": {
     "name": "Valentín Lorente Jiménez",
-    "label": "Technical Product Manager · Product Owner · APIs, integraciones y producto data-driven",
+    "label": "Project Manager · Product Owner · Software Engineer",
     "headline": "Convierto problemas de negocio en producto.",
     "image": "/me.webp",
     "email": "vlorentejimenez@gmail.com",
     "url": "https://www.vlorente.dev",
     "summary": "Perfil de producto y proyecto con base de ingeniería: más de 9 años entre desarrollo, producto y gestión de proyectos. Uno tres cosas que rara vez van juntas: criterio técnico real, porque he programado en SAP ABAP, TypeScript y Python, he diseñado APIs con enfoque API First y he definido arquitectura e integraciones; producto y proyecto de principio a fin, desde definir un producto desde cero con discovery, backlog, historias de usuario y métricas hasta dirigir proyectos de banca en una gran consultora; y orientación a negocio con resultados medibles: he lanzado nuevas líneas de negocio, he liderado la implantación de sistemas críticos y he mejorado costes, tiempos y calidad con cifras.",
     "seo": {
-      "title": "Valentín Lorente — Product Owner y Technical Product Manager",
-      "description": "Product Owner y Technical Product Manager con base de ingeniería: producto de principio a fin, APIs e integraciones y resultados medibles. Madrid o remoto."
+      "title": "Valentín Lorente — Project Manager y Product Owner",
+      "description": "Project Manager y Product Owner con base de ingeniería de software: proyectos de banca, producto de principio a fin y resultados medibles. Madrid o remoto."
     },
     "location": {
       "city": "Madrid",
@@ -85,12 +85,12 @@
   "work": [
     {
       "name": "StopCardio",
-      "position": "Growth Engineer / Technical Product Strategist",
+      "position": "Director del Departamento de Desarrollo",
       "location": "Madrid",
       "url": "",
       "startDate": "2025-11-01",
       "endDate": null,
-      "summary": "Cardioprotección (desfibriladores), venta B2B con contact center y red comercial. Rol de Product Owner / Product Manager: roadmap y prioridades, presupuesto e inversión publicitaria (Google Ads y Meta Ads), KPIs y reporting a dirección, y elección de proveedores y herramientas; hago de puente entre producto y marketing. Coordino a 4–6 personas de desarrollo, BI, ventas y contact center.",
+      "summary": "Cardioprotección (desfibriladores), venta B2B con contact center y red comercial. Dirijo el departamento de desarrollo con rol de Product Owner / Product Manager: roadmap y prioridades, discovery con usuarios internos y clientes, presupuesto e inversión publicitaria (Google Ads y Meta Ads), KPIs y reporting a dirección, y elección de proveedores y herramientas; hago de puente entre producto y marketing. Coordino a 4–6 personas de desarrollo, BI, ventas y contact center.",
       "highlights": [],
       "groups": [
         {
