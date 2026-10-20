@@ -1,6 +1,6 @@
 # vlorente.dev
 
-Portfolio personal de **Valentín Lorente**, Product Owner y Technical Product Manager. Es una web de una sola página, oscura y animada con el scroll, pensada para que un recruiter vea en un minuto qué he hecho y con qué resultados.
+Portfolio personal de **Valentín Lorente**, Project Manager y Product Owner. Es una web de una sola página, oscura y animada con el scroll, pensada para que un recruiter vea en un minuto qué he hecho y con qué resultados.
 
 **En producción:** [www.vlorente.dev](https://www.vlorente.dev)
 
