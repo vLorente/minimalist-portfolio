@@ -6,7 +6,7 @@
     "image": "/me.webp",
     "email": "vlorentejimenez@gmail.com",
     "url": "https://www.vlorente.dev",
-    "summary": "Perfil de producto con base de ingeniería: más de 8 años entre desarrollo y producto, y rol de Product Owner / Product Manager desde 2018. Uno tres cosas que rara vez van juntas: criterio técnico real, porque he diseñado APIs con enfoque API First y he programado en Python, TypeScript y SAP ABAP; gestión de producto de principio a fin, con discovery, roadmap, backlog, historias de usuario y métricas; y orientación a negocio con resultados medibles: he lanzado nuevas líneas de negocio, he liderado la implantación de sistemas críticos y he mejorado costes, tiempos y calidad con cifras.",
+    "summary": "Perfil de producto y proyecto con base de ingeniería: más de 9 años entre desarrollo, producto y gestión de proyectos. Uno tres cosas que rara vez van juntas: criterio técnico real, porque he programado en SAP ABAP, TypeScript y Python, he diseñado APIs con enfoque API First y he definido arquitectura e integraciones; producto y proyecto de principio a fin, desde definir un producto desde cero con discovery, backlog, historias de usuario y métricas hasta dirigir proyectos de banca en una gran consultora; y orientación a negocio con resultados medibles: he lanzado nuevas líneas de negocio, he liderado la implantación de sistemas críticos y he mejorado costes, tiempos y calidad con cifras.",
     "seo": {
       "title": "Valentín Lorente — Product Owner y Technical Product Manager",
       "description": "Product Owner y Technical Product Manager con base de ingeniería: producto de principio a fin, APIs e integraciones y resultados medibles. Madrid o remoto."
@@ -86,7 +86,7 @@
     {
       "name": "StopCardio",
       "position": "Growth Engineer / Technical Product Strategist",
-      "location": "España",
+      "location": "Madrid",
       "url": "",
       "startDate": "2025-11-01",
       "endDate": null,
@@ -119,14 +119,38 @@
       ]
     },
     {
-      "name": "Autónomo",
-      "position": "Consultor ERP y producto",
+      "name": "NTT Data",
+      "position": "Jefe de proyecto",
       "url": "",
-      "startDate": "2024-04-01",
-      "endDate": "2025-09-30",
-      "summary": "ERP a medida para 2–3 clientes del sector industrial y de producción.",
-      "highlights": [
-        "Ciclo completo: análisis de requisitos con el cliente, desarrollo, implantación y formación de usuarios, y mantenimiento y soporte."
+      "startDate": "2018-01-01",
+      "endDate": "2025-12-31",
+      "summary": "Proyectos de software para clientes de banca. Evolucioné de Consultor SAP a Full Stack Developer (TypeScript y Python), Senior Full Stack Developer y Jefe de proyecto, dirigiendo equipos de 5–8 personas.",
+      "highlights": [],
+      "groups": [
+        {
+          "title": "Jefe de proyecto",
+          "highlights": [
+            "Lideraba un equipo de 5–8 personas: asignación de trabajo, seguimiento y formación.",
+            "Llevaba la relación con el cliente y los requisitos: reuniones, análisis funcional y definición de la solución.",
+            "Gestionaba el proyecto: planificación, estimaciones, seguimiento y plazos.",
+            "Diseñaba la arquitectura de la solución y las interfaces entre sistemas.",
+            "Trabajaba con Scrum/Agile o con proyectos cerrados en cascada, según el cliente, y participaba en las ceremonias como PO o SM (planning, refinamiento y reviews con el cliente), con Jira y Confluence."
+          ]
+        },
+        {
+          "title": "Qué construíamos para banca",
+          "highlights": [
+            "Aplicaciones internas: herramientas web para empleados y back-office.",
+            "APIs e integraciones entre sistemas del banco.",
+            "Datos y reporting, con TypeScript y Python."
+          ]
+        },
+        {
+          "title": "Inicio como Consultor SAP",
+          "highlights": [
+            "Análisis de requisitos y personalizaciones SAP (ABAP; módulos SD, MM y PP) para grandes cuentas, e informes y reporting."
+          ]
+        }
       ]
     },
     {
@@ -134,9 +158,9 @@
       "position": "Full Stack & Product Engineer",
       "location": "Murcia",
       "url": "",
-      "startDate": "2018-01-01",
-      "endDate": "2024-12-31",
-      "summary": "Product Owner / Product Manager y jefe de proyecto con clientes. Lideré un equipo de 3 personas.",
+      "startDate": "2016-01-01",
+      "endDate": "2018-01-01",
+      "summary": "Primera experiencia. Product Owner / Product Manager y jefe de proyecto con clientes. Lideré un equipo de 3 personas: backend, frontend/móvil y soporte funcional.",
       "highlights": [],
       "groups": [
         {
@@ -163,19 +187,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "NTT Data",
-      "position": "Consultor SAP & Backend Developer",
-      "location": "Murcia",
-      "url": "",
-      "startDate": "2016-01-01",
-      "endDate": "2018-01-01",
-      "summary": "Consultoría SAP para grandes cuentas.",
-      "highlights": [
-        "Análisis de requisitos y personalizaciones SAP (ABAP; módulos SD, MM y PP) para grandes cuentas.",
-        "Informes y reporting para cliente."
-      ]
     }
   ],
   "education": [
@@ -186,7 +197,7 @@
       "studyType": "Grado",
       "startDate": "2015-01-01",
       "endDate": "2019-01-01",
-      "summary": "Matrícula de Honor en Programación Orientada a Objetos, en Aplicaciones Móviles y en Auditoría y Peritaje de Proyectos Informáticos."
+      "summary": "Compaginado con el trabajo desde 2016. Matrícula de Honor en Programación Orientada a Objetos, en Aplicaciones Móviles y en Auditoría y Peritaje de Proyectos Informáticos."
     },
     {
       "institution": "CES Vega Media",
@@ -225,6 +236,19 @@
       ]
     },
     {
+      "name": "Gestión de proyectos",
+      "keywords": [
+        "Planificación",
+        "Estimaciones",
+        "Seguimiento",
+        "Gestión de equipos",
+        "Relación con cliente",
+        "Análisis funcional",
+        "Scrum / Agile",
+        "Cascada"
+      ]
+    },
+    {
       "name": "Negocio y operaciones",
       "keywords": [
         "Go-to-market",
@@ -248,9 +272,8 @@
       ]
     },
     {
-      "name": "Gestión",
+      "name": "Herramientas de gestión",
       "keywords": [
-        "Agile / Scrum",
         "Jira",
         "Confluence",
         "Notion",
@@ -265,6 +288,7 @@
         "API First",
         "OpenAPI / Swagger",
         "Versionado de APIs",
+        "Integración de sistemas",
         "Integración con CRM"
       ]
     },
@@ -274,6 +298,7 @@
         "Python",
         "TypeScript",
         "SQL",
+        "SAP ABAP",
         "FastAPI",
         "SQLModel",
         "SQLAlchemy",
@@ -288,7 +313,8 @@
       "name": "Datos",
       "keywords": [
         "PostgreSQL",
-        "Metabase"
+        "Metabase",
+        "Reporting"
       ]
     },
     {
@@ -306,7 +332,6 @@
       "name": "ERP y CRM",
       "keywords": [
         "SAP",
-        "ABAP",
         "SD / MM / PP",
         "Tryton",
         "Odoo"
